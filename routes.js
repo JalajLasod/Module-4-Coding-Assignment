@@ -11,14 +11,14 @@
 
     $stateProvider.state('home',{
       url:'/',
-      templateUrl:'/src/templates/home.html'
+      templateUrl:'/home.html'
     }).state('categories',{
       url:'/categories',
-      templateUrl:'/src/templates/categories.html',
+      templateUrl:'/categories.html',
       controller:'controller as ctrl'
     }).state('items',{
       url:'/items/{index}',
-      templateUrl:'/src/templates/items.html',
+      templateUrl:'/items.html',
       controller:'itemController as ctrl',
       resolve:{
       item:['$stateParams','service',
